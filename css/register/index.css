@@ -1,0 +1,195 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+     font-family: "Microsoft YaHei";
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.wp{
+   width: 1002px;
+    margin:0 auto;
+/*    overflow: hidden;*/
+}
+#nav{
+    width: 100%;
+    height:103px;
+    border-bottom: solid 3px #a4c333;
+    box-shadow: 0 0 73px black;
+}
+#nav .wp{
+    height:103px;
+    position: relative;
+}
+#logo{
+    position: absolute;
+    width: 263px;
+    height: 82px;
+    background: url(img/logo.png);
+    top:50%;
+    transform:translateX(0%) translateY(-50%);
+}
+#nav .left{
+    position: absolute;
+    top:50%;
+    transform:translateX(0%) translateY(-50%);
+    width:108.3px;
+    height:50px;
+    line-height: 50px;
+    font-size: 26.89px;
+    color:#3d3d3d;
+    left:471px;
+    padding-right: 37px;
+    border-right:solid 2px #a4c333;
+}
+#nav .right{
+    position: absolute;
+    top:50%;
+    transform:translateX(0%) translateY(-50%);
+    width:108.3px;
+    height:50px;
+    line-height: 50px;
+    font-size: 26.89px;
+    color:#3d3d3d;
+    left:658px;
+    padding-right: 37px;
+    border-right:solid 2px #a4c333;
+}
+#land{
+    width: 116px;
+    height: 35px;
+    position: absolute;
+    top:50%;
+    left:886px;
+    transform:translateX(0%) translateY(-50%);
+}
+#land span{
+    font-size: 26px;
+    color:#3d3d3d;
+}
+#form{
+    width: 100%;
+    height: 1491px;
+    border-bottom: solid 3px #a4c333;
+}
+#form .wp{
+    width: 440px;
+    height: 1491px;
+}
+#form .register{
+    margin-top: 110px;
+    width: 440px;
+    height: 120px;
+    font-size: 115px;
+    line-height: 120px;
+    text-align: center;
+    font-family: "Broadway";
+    color:#4e574f;
+    margin-bottom: 45px;
+}
+#form .line{
+    width: 305px;
+    height: 45px;
+    margin-top: 45px;
+    margin: 0 auto;
+    text-align: center;
+}
+#form .line .left{
+    float:left;
+    width: 111px;
+    height: 6px;
+    background-color: #e7e7e7;
+    margin-right: 19px;
+    margin-top: 19.5px;   
+}
+#form .line .center{
+    float:left;
+    margin:0 auto;
+    width: 44px;
+    height: 45px;
+    font-family: "Broadway";
+    background-color: #94c72e;
+    color:#ffffff;
+    font-size: 35px;
+    line-height: 45px;
+}
+#form .line .right{
+    float:right;
+    width: 111px;
+    height: 6px;
+    background-color: #e7e7e7;
+    margin-left: 19px;
+    margin-top: 19.5px;
+}
+#form ul{
+    margin-top: 100px;
+}
+#form li{
+    width: 440px;
+    height: 73px;
+    margin-bottom: 52px;
+}
+#form span{
+    font-size: 26px;
+    color:#4e574f;
+}
+#form input{
+    height: 35px;
+    width: 434px;
+    font-size: 26px;
+    line-height: 35px;
+    background-color: #ffffff;
+    border:solid 3px #e7e7e7;
+}
+#form .lastli{
+    margin-bottom: 160px;
+    
+}
+#form .brand{
+    width: 440px;
+    height: 35px;
+}
+#form .last{
+    float:left;
+    width: 283px;
+}
+#form .get{
+    float:right;
+    width: 123px;
+    height: 41px;
+    background-color: #aaaaaa;
+}
+#form .button{
+    width: 182px;
+    height: 63px;
+    background-color: #94c72e;
+    font-size: 35.13px;
+    color:#ffffff;
+    text-align: center;
+    line-height: 63px;
+    margin: 0 auto;
+}
+#form .button:first-letter{
+    letter-spacing: 25px;
+}
+#footer{
+    width: 100%;
+    height: 187px;
+    background: url(img/footer.jpg);
+}
+#footer .wp{
+    height: 187px;
+}
+#footer span{
+    font-size: 26px;
+    color:#3d3d3d;
+    line-height: 35px;
+}
+
+
+

@@ -1,0 +1,301 @@
+*{
+    margin: 0;
+    padding: 0;
+     font-family: "Microsoft YaHei";
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.wp{
+   width: 1002px;
+    margin:0 auto;
+/*    overflow: hidden;*/
+}
+#nav{
+    width: 100%;
+    height:103px;
+    border-bottom: solid 3px #a4c333;
+    box-shadow: 0 0 73px black;
+}
+#nav .wp{
+    height:103px;
+    position: relative;
+}
+#logo{
+    position: absolute;
+    width: 263px;
+    height: 82px;
+    background: url(img/logo.png);
+    top:50%;
+    transform:translateX(0%) translateY(-50%);
+}
+#nav .left{
+    position: absolute;
+    top:50%;
+    transform:translateX(0%) translateY(-50%);
+    width:108.3px;
+    height:50px;
+    line-height: 50px;
+    font-size: 26.89px;
+    color:#3d3d3d;
+    left:471px;
+    padding-right: 37px;
+    border-right:solid 2px #a4c333;
+}
+#nav .right{
+    position: absolute;
+    top:50%;
+    transform:translateX(0%) translateY(-50%);
+    width:108.3px;
+    height:50px;
+    line-height: 50px;
+    font-size: 26.89px;
+    color:#3d3d3d;
+    left:658px;
+    padding-right: 37px;
+    border-right:solid 2px #a4c333;
+}
+#land{
+    float:right;
+    line-height: 103px;
+    font-size: 26.89px;
+    color:#3d3d3d;
+}
+#form{
+    width: 100%;
+    height: 1781px;
+    border-bottom: solid 3px #a4c333;
+}
+#form .wp{
+    width: 440px;
+    height: 1298px;
+}
+#form .register{
+    width: 800px;
+    height: 120px;
+    font-size: 115px;
+    line-height: 120px;
+    text-align: center;
+    font-family: "张海山锐线体简";
+    color:#4e574f;
+    margin:0 auto;
+    margin-bottom: 45px;
+    margin-top: 110px;
+}
+#form .line{
+    width: 305px;
+    height: 45px;
+    margin-top: 45px;
+    margin: 0 auto;
+    text-align: center;
+}
+#form .line .left{
+    float:left;
+    width: 111px;
+    height: 6px;
+    background-color: #e7e7e7;
+    margin-right: 19px;
+    margin-top: 19.5px;   
+}
+#form .line .center{
+    float:left;
+    margin:0 auto;
+    width: 44px;
+    height: 45px;
+    font-family: "Broadway";
+    background-color: #94c72e;
+    color:#ffffff;
+    font-size: 35px;
+    line-height: 45px;
+}
+#form .line .right{
+    float:right;
+    width: 111px;
+    height: 6px;
+    background-color: #e7e7e7;
+    margin-left: 19px;
+    margin-top: 19.5px;
+}
+#form ul{
+    margin-top: 100px;
+}
+#form li{
+    width: 440px;
+    height: 73px;
+    margin-bottom: 52px;
+}
+#form textarea{
+    width: 434px;
+    height: 196px;
+    font-size: 26px;
+    line-height: 35px;
+    background-color: #ffffff;
+    border:solid 3px #e7e7e7;
+}
+#form span{
+    font-size: 26px;
+    color:#4e574f;
+}
+#form input{
+    height: 35px;
+    width: 434px;
+    font-size: 26px;
+    line-height: 35px;
+    background-color: #ffffff;
+    border:solid 3px #e7e7e7;
+}
+#form .photo input{
+    float:left;
+    width: 342px;
+    border-right:solid  0 #e7e7e7;
+}
+#form .photo div{
+    float:right;
+    width: 94px;
+    height: 41px;
+    font-family: "方正姚体";
+    text-align: center;
+    line-height: 41px;
+    background-color: #94c72e;
+    font-size: 24.19px;
+    color:#ffffff;
+    letter-spacing: -6px;
+}
+#form .photo div:last-letter{
+    letter-spacing: 0px;
+}
+#form #type{
+    position: relative;
+}
+#form #type input{
+    float:left;
+    width: 395px;
+    border-right:solid  0 #e7e7e7;
+}
+#form #type .box{
+    float:right;
+    width: 42px;
+    height: 41px;
+    background-color: #f3f2f2;
+}
+#form .img{
+    width: 17px;
+    height: 15px;
+    background: url(img/arrow.png);
+    margin:0 auto;
+    margin-top:13px;
+}
+#type #slide{
+    top:75px;
+    display:none;
+    position:absolute;
+    margin:0px;
+    
+}
+#type #slide li{
+    border:solid 1px #e7e7e7;
+    height: 35px;
+    width: 440px;
+    font-size: 26px;
+    line-height: 35px;
+    color:#7d837e;
+    margin: 0px;
+    background-color: #eee;
+}
+#form .text{
+    width: 440px;
+    height: 234px;
+    margin-bottom: 52px;
+}
+#form #place{
+    position: relative;
+}
+#form #place input{
+    float:left;
+    width: 395px;
+    border-right:solid  0 #e7e7e7;
+}
+#form #place .box{
+    float:right;
+    width: 42px;
+    height: 41px;
+    background-color: #f3f2f2;
+}
+#form .img{
+    width: 17px;
+    height: 15px;
+    background: url(img/arrow.png);
+    margin:0 auto;
+    margin-top:13px;
+}
+#place #slide1{
+    top:75px;
+    display:none;
+    position:absolute;
+    margin:0px;
+    
+}
+#place #slide1 li{
+    border:solid 1px #e7e7e7;
+    height: 35px;
+    width: 440px;
+    font-size: 26px;
+    line-height: 35px;
+    color:#7d837e;
+    margin: 0px;
+    background-color: #eee;
+}
+#form .lastli{
+    height: 233px;
+    margin-bottom: 110px;
+}
+#form .buttonleft{
+    width: 151px;
+    height: 52px;
+   margin: 0 auto;
+    background-color: #94c72e;
+    line-height: 52px;
+    font-family: "方正姚体";
+    font-size: 29px;
+    text-align: center; 
+    color:#ffffff;
+}
+#form .buttonleft:first-letter{
+    letter-spacing: 25px;
+}
+#form .buttonright{
+    width: 151px;
+    height: 52px;
+    float:right;
+    background-color: #f3f2f2;
+    line-height: 52px;
+    font-family: "方正姚体";
+    font-size: 29px;
+    text-align: center; 
+    color:#4e574f;
+}
+#form .buttonright:first-letter{
+    letter-spacing: 25px;
+}
+
+
+
+
+
+
+#footer{
+    width: 100%;
+    height: 187px;
+    background: url(img/footer.jpg);
+}
+#footer .wp{
+    height: 187px;
+}
+#footer span{
+    font-size: 26px;
+    color:#3d3d3d;
+    line-height: 35px;
+}

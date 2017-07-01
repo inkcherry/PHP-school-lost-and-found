@@ -1,0 +1,239 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Microsoft YaHei";
+}
+ul{
+    list-style: none;
+}
+li{
+    float: left;
+}
+.wp{
+    width: 1002px;
+    margin:0 auto;
+}
+#header{
+    width: 100%;
+    height: 350px;
+}
+#header .wp{
+    height: 350px;
+    position: relative
+}
+#logo{
+    position: absolute;
+    width: 74px;
+    height: 80px;
+    background: url("img/logo.png");
+    float:left;
+    bottom:0px;
+    left:0px;
+}
+#header .cn{
+    position: absolute;
+    font-size: 40px;
+    color:#2f2f2f;
+    float:left;
+    bottom:0px;
+    left:81px;
+}
+#header .en{
+    position: absolute;
+    height: 38px;
+    width: 77px;
+    font-size: 40px;
+    font-family:"Birch Std"; 
+    color:#a1c132;
+    float:left;
+    bottom:0px;
+    left:249px;
+}
+#search{
+    position: absolute;
+    width: 379px;
+    height: 44px;
+    right: 46px;
+    bottom:0px;
+}
+#search input{
+    width: 332px;
+    height: 42px;
+    border:solid 1px #0e0e0e;
+    float:left;
+    background-color: #eeeeee;
+    font-size: 36px;
+    line-height: 42px;
+}
+#search .button{
+    width: 45px;
+    height: 44px;
+    background-color: #a0a0a0;
+    float:right;
+    text-align: center;
+}
+#form{
+    width: 100%;
+    height: 136px;
+    margin-top: 50px;
+}
+#form .wp{
+    height: 136px;
+}
+#form .box{
+    width: 1002px;
+    height: 136px;
+    border-radius: 20px;
+    background-color: #b5d83a;
+}
+#form .top li{
+    margin-top: 32px;
+    margin-left: 31px;
+    width: 61px;
+    height: 27px;
+    font-size: 15px;
+    color:#666666;
+    background-color: #ffffff;
+    line-height: 27px;
+    text-align: center;
+    border-radius: 10px;
+}
+#form .top .head{
+    width: 99px;
+    height: 27px;
+    margin-left: 40px;
+    margin-top: 32px;
+    line-height: 27px;
+    font-size: 24px;
+    color:#454545;
+    background-color:rgba(0,0,0,0);
+    border-radius: 0px;
+}
+#form .bottom li{
+    margin-top: 21px;
+    margin-left: 31px;
+    width: 61px;
+    height: 27px;
+    font-size: 15px;
+    color:#666666;
+    background-color: #ffffff;
+    line-height: 27px;
+    text-align: center;
+    border-radius: 10px;
+}
+#form .bottom .head{
+    width: 99px;
+    height: 27px;
+    margin-left: 40px;
+    margin-top: 21px;
+    line-height: 27px;
+    font-size: 24px;
+    color:#454545;
+    background-color:rgba(0,0,0,0);
+    border-radius: 0px;
+}
+#table{
+    width: 100%;
+    height: 750px;
+}
+#table .wp{
+   height: 800px; 
+}
+#table ul{
+    margin-top: 30px;
+    overflow: hidden;
+}
+#table li{
+    width: 289px;
+    height: 196px;
+    background: url(img/scenery.png);
+     background-repeat:no-repeat;
+    margin-bottom: 67px;
+    position: relative;
+   
+}
+#table .lidown{
+    margin-bottom: 47px;
+}
+#table .middle{
+    margin-left: 67px;
+    margin-right: 67px;
+}
+.dark{
+    width: 289px;
+    height: 196px;
+    background-color: rgba(0,0,0,0.5);
+    transition: all .5s;
+    position: absolute;
+    bottom:0;
+}
+.dark span{
+    color:#fff;
+    font-size: 20px;
+    line-height: 24px;
+    float:left;
+    margin-left: 24px;
+}
+#table li:hover .dark{
+    height: 0px;
+}
+#table .button{
+    width: 51px;
+    height: 51px;
+    background: url(img/arrow.png);
+    margin:0 auto;
+}
+#table span{
+    font-size: 16px;
+}
+#footer{
+    width: 100%;
+    height: 39px;
+}
+#footer .wp{
+    height: 39px;
+}
+#footer .box{
+    width: 538px;
+    height: 39px;
+    margin: 0 auto;
+}
+#footer .arrowleft{
+    width: 97px;
+    height: 39px;
+    float:left;
+}
+#footer .arrowleft .imgleft{
+    width: 21px;
+    height: 39px;
+    float:left;
+    background: url(img/arrowleft.png);
+}
+#footer .arrowleft p{
+    display: inline;
+    float:right;
+    font-size: 24px;
+    line-height: 35px;
+    color:#4b4b4b;
+}
+#footer .arrowright{
+    width: 97px;
+    height: 39px;
+    float:right;
+    margin-left: 213px;
+}
+#footer .arrowright .imgright{
+    width: 21px;
+    height: 39px;
+    float:right;
+    background: url(img/arrowright.png);
+}
+#footer .arrowright p{
+    display: inline;
+    float:left;
+    font-size: 24px;
+    line-height: 35px;
+    color:#4b4b4b;
+}
+
+

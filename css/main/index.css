@@ -1,0 +1,270 @@
+*{
+    margin: 0;
+    padding: 0;
+     font-family: "Microsoft YaHei";
+}
+body{
+    
+}
+ul{
+    list-style: none;
+}
+li{
+    float: left;
+}
+a{
+    text-decoration: none;
+}
+.wp{
+   width: 1002px;
+    margin:0 auto;
+/*    overflow: hidden;*/
+}
+#nav{
+    width: 100%;
+    height:103px;
+}
+#nav .wp{
+    height:103px;
+    position: relative;
+}
+#logo{
+    position: absolute;
+    width: 263px;
+    height: 82px;
+    background: url(img/logo.png);
+    top:50%;
+    transform:translateX(0%) translateY(-50%);
+}
+#nav .left{
+    position: absolute;
+    top:50%;
+    transform:translateX(0%) translateY(-50%);
+    width:108.3px;
+    height:26px;
+    line-height: 26px;
+    font-size: 26.89px;
+    color:#3d3d3d;
+    left:471px;
+    padding-right: 37px;
+    border-right:solid 2px #b7c4c7;
+}
+#nav .right{
+    position: absolute;
+    top:50%;
+    transform:translateX(0%) translateY(-50%);
+    width:108.3px;
+    height:26px;
+    line-height: 26px;
+    font-size: 26.89px;
+    color:#3d3d3d;
+    left:658px;
+}
+#land{
+    width: 116px;
+    height: 27px;
+    position: absolute;
+    top:50%;
+    left:886px;
+    transform:translateX(0%) translateY(-50%);
+}
+#land span{
+    font-size: 26px;
+    color:#3d3d3d;
+}
+#land ul{
+    margin-top: 34px;
+    display: none;
+    position: absolute;
+}
+#land li{
+     width: 180px;
+    height: 82px;
+    background-color: #8a918e;
+    color:#3d3d3d;
+    font-size: 25.56px;
+    line-height: 82px;
+    text-align: center;
+}
+#land .small{
+    width: 154px;
+    height: 2px;
+    background-color: #fbfbfb;
+    margin-left: 13px;
+}
+#line1{
+    width: 100%;
+    height:3px;
+    background-color:#a4c333；
+}
+#background{
+    width: 100%;
+    height:474px;
+    background: url(img/background.png);
+    border-top:solid 3px #a4c333;
+    min-width: 1002px;
+}
+#circle{
+    width: 100%;
+    height: 288px;
+}
+#circle .wp{
+    height: 288px;
+}
+#circle li{
+    width: 334px;
+    height: 288px;
+}
+#circle .ball{
+    width: 160px;
+    height: 160px;
+    margin:0 auto;
+    margin-top: 30px;
+    background: url(img/circle.png);
+    line-height: 160px;
+    text-align: center;
+    font-size: 59.46px;
+    color:#242424;
+}
+.smallup{
+    margin:0 auto;
+    width: 80px;
+    height: 2px;
+    background: url(img/smallup.png);
+    margin-top: 20px;
+}
+#information{
+     margin:0 auto;
+    width: 80px;
+    margin-top: 5px;
+    text-align: center;
+    font-size: 18.06px;
+    color:#242424;
+}
+.smalldown{
+     margin:0 auto;
+    width: 80px;
+    height: 2px;
+    background: url(img/smalldown.png);
+    margin-top: 5px;
+}
+#table{
+    width: 100%;
+    height: 1548px;
+    background-color: #f4f4f4;
+}
+#table .wp{
+    height:1548px;
+/*    text-align: center;*/
+}
+#lost{
+    width: 1002px;
+    height: 710px;
+    overflow: hidden;
+    
+}
+.title{
+    position: relative;
+    width: 1002px;
+    height: 60px;
+    margin-top: 34px;
+}
+.green{
+    position: absolute;
+    left:0;
+    width: 15px;
+    height: 60px;
+    background-color: #a4c333;
+}
+#lost .top{
+    width: 114px;
+    height: 38px;
+    background: url(img/found.png);
+    margin-left: 20px;
+}
+#found .top{
+     width: 114px;
+    height: 38px;
+    background: url(img/lost.png);
+    margin-left: 20px;
+}
+#table .down{
+    height: 16px;
+    font-family: "Orator Std";
+    font-size: 16px;
+     color:#242424;
+    position: absolute;
+    left:20px;
+    bottom:0px;
+}
+#table ul{
+    margin-top: 30px;
+    overflow: hidden;
+}
+#table li{
+    width: 289px;
+    height: 196px;
+    background: url(img/scenery.png);
+    margin-bottom: 67px;
+    position: relative;
+}
+#table .lidown{
+    margin-bottom: 47px;
+}
+#table .middle{
+    margin-left: 67px;
+    margin-right: 67px;
+}
+.dark{
+    width: 289px;
+    height: 196px;
+    background-color: rgba(0,0,0,0.5);
+    transition: all .5s;
+    position: absolute;
+    bottom:0;
+}
+.dark span{
+    color:#fff;
+    font-size: 20px;
+    line-height: 24px;
+    float:left;
+    margin-left: 24px;
+}
+#table li:hover .dark{
+    height: 0px;
+    display: none;
+}
+#table .button{
+    width: 51px;
+    height: 51px;
+    background: url(img/arrow.png);
+    margin:0 auto;
+}
+#table p{
+    text-align: center;
+    height: 16px;
+    font-size: 16px;
+}
+#footer{
+    width: 100%;
+    height: 187px;
+    background: url(img/footer.jpg);
+}
+#footer .wp{
+    height: 187px;
+}
+#footer span{
+    font-size: 26px;
+    color:#3d3d3d;
+    line-height: 35px;
+}
+
+
+
+
+
+
+
+
+
+
