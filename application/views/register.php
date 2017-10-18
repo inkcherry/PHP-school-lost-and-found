@@ -5,14 +5,14 @@
 header("Cache-control: no-cache, no-store, must-revalidate"); // HTTP 1.1.
 header("pragma: no-cache"); // HTTP 1.0.
 header("Expires: 0"); // Proxies.?>
-    <base href="http://localhost/realone/css/register/"/>
+    <base href="<?php echo site_url() ?>"/>
     <meta charset="UTF-8">
     <title>Document</title>
-    <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" type="text/css" href="icon/iconfont.css">
+    <link rel="stylesheet" href="css/register/index.css">
+    <link rel="stylesheet" type="text/css" href="css/register/icon/iconfont.css">
 
 </head>
-<script type="text/javascript" src="http://localhost/realone/js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery.js"></script>
 <script type="text/javascript">
 
 function reg()
@@ -32,7 +32,7 @@ function reg()
 
         $.ajax({
             method:"post",
-            url:"http://localhost/realone/index.php/user/c_register",
+            url:"index.php/user/c_register",
             data:data,
             success:function(result){
                 if(result == ""){
@@ -51,11 +51,11 @@ function reg()
 
 function jumpindex()
 {
-    window. window.location.assign('http://localhost/realone/index.php/user/c_starti');
+    window. window.location.assign('index.php/user/c_starti');
 }
 function refresh()
 { 
-    document.getElementById("img1").src="http://localhost/realone/index.php/user/c_cap";
+    document.getElementById("img1").src="index.php/user/c_cap";
 }
   </script>
 <body>
@@ -99,7 +99,7 @@ function refresh()
             <li class="lastli" name="" > <span>验证码</span>
                <div class="brand">
                 <input class="last" type="text" id='captcha'>
-                <div class="get"><img id="img1" src="http://localhost/realone/index.php/user/c_cap" onclick="refresh()"></div>
+                <div class="get"><img id="img1" src="index.php/user/c_cap" onclick="refresh()"></div>
 
                 </div>
             </li></form>

@@ -9,9 +9,9 @@ class User extends CI_Controller {
 	// }
 
 	
-	public function c_startl(){
-		$this->load->view('login');
-	}
+	// public function c_startl(){
+	// 	$this->load->view('login');
+	// }
 
 	public function c_startr(){
 		$this->load->view('register');

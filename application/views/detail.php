@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-   <base href="http://localhost/realone/css/detail/"/>
+   <base href="<?php echo site_url() ?>"/>
     <meta charset="UTF-8">
     <title>Document</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="css/detail/index.css">
 
 </head>
 <body>
@@ -35,7 +35,7 @@
             </li>
             <li > 
                <span>物品照片</span>
-                <img src="http://localhost/realone/<?php echo $res[0]['fname'] ?>">
+                <img src="<?php echo $res[0]['fname'] ?>">
             </li>
             <li > 
                <span>物品类型</span>
@@ -65,7 +65,7 @@
       <span>联系我们：丹青楼914实验室</span> 
     </div>
 </div>
-<script type="text/javascript" src="http://localhost/realone/js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery.js"></script>
 </script>   
 </body>
 </html>

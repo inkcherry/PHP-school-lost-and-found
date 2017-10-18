@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <base href="http://localhost/realone/css/history/"/>
+   <base href="<?php echo site_url() ?>"/>
     <meta charset="UTF-8">
     <title>Document</title>
-    <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" type="text/css" href="icon/iconfont.css">
+    <link rel="stylesheet" href="css/history/index.css">
+    <link rel="stylesheet" type="css/history/text/css" href="icon/iconfont.css">
     <script type="text/javascript" src="http://localhost/realone/js/jquery.js"></script>
     <script type="text/javascript" src="http://localhost/realone/css/history/index.js"></script>
 </head>
@@ -29,7 +29,7 @@ $.getJSON(
     var len_lost=res['lost'].length;
     var len_found=res['found'].length;
     var len_sum=len_lost+len_found;
-    alert(JSON.stringify(res));
+    // alert(JSON.stringify(res));
 
 for(var i=0;i<len_lost;i++)
 {
@@ -40,14 +40,14 @@ for(var i=0;i<len_lost;i++)
 
 
     var $liid=$("#form li").eq(i);
-    $liid.css("background",'no-repeat url(http://localhost/realone/'+res['lost'][i]['fname']+')');
+    $liid.css("background",'no-repeat url(<?php echo site_url()?>'+res['lost'][i]['fname']+')');
 
 
 
      $liid.click(function(){
-alert("gogogo");
+      // alert("gogogo");
 
-      alert(res_tmp['lost'][i]['lostname']);
+      // alert(res_tmp['lost'][i]['lostname']);
       // window.location.assign('http://localhost/realone/index.php/user/c_detail?id='+res['lost'][i]['id']+'&flag=1');
        });
 
@@ -60,7 +60,7 @@ for(var i=len_lost;i<len_sum;i++)
 
 
        var $liid=$("#form li").eq(i);
-    $liid.css("background",'no-repeat url(http://localhost/realone/'+res['found'][i-len_lost]['fname']+')');
+    $liid.css("background",'no-repeat url('+res['found'][i-len_lost]['fname']+')');
 
 }
 

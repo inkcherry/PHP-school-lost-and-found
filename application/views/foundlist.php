@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-<base href="http://localhost/realone/css/lostlist/"/>
+<base href="<?php echo site_url() ?>"/>
 <head>
 
     <meta charset="UTF-8">
     <title>Document</title>
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" type="text/css" href="icon/iconfont.css">
-    <script type="text/javascript" src="http://localhost/realone/js/jquery.js"></script>
+    <script type="text/javascript" src="js/jquery.js"></script>
 </head>
 <script type="text/javascript">
 var page=1;
@@ -26,7 +26,7 @@ function ninep(i=0)
 
       $.getJSON({
     method:"post",
-    url:"http://localhost/realone/index.php/user/c_ninepic",
+    url:"index.php/user/c_ninepic",
     data:data,
    success:function(res)
    {     
@@ -38,7 +38,7 @@ function ninep(i=0)
         {   
         var m='t'+i;
           a1s[i].innerHTML="<span>"+res[i].name+"同学<br>于"+res[i].place+"<br>捡到"+res[i].lostname+"<span>";   
-          document.getElementById(m).style.background='no-repeat url(http://localhost/realone/'+res[i].fname+')';          
+          document.getElementById(m).style.background='no-repeat url(<?php echo site_url() ?>'+res[i].fname+')';          
         }
         if(res[0]['num']==0)
         {
@@ -52,7 +52,7 @@ function ninep(i=0)
            {
               var m='t'+i;
             a1s[i].innerHTML="<span>暂无更多信息<span>";   
-            document.getElementById(m).style.background='no-repeat url(http://localhost/realone/upload/moren.png)';  
+            document.getElementById(m).style.background='no-repeat url(<?php echo site_url() ?>moren.png)';  
            }
         }      
    },
@@ -78,7 +78,7 @@ function forpage(i)
 
   function detail(i)
   {  
-    window.location.assign('http://localhost/realone/index.php/user/c_detail?id='+res_tmp[i].id+'&flag=2');
+    window.location.assign('index.php/user/c_detail?id='+res_tmp[i].id+'&flag=2');
   }
   function forfind()
   {

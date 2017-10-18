@@ -7,15 +7,16 @@ header("pragma: no-cache"); // HTTP 1.0.
 header("Expires: 0"); // Proxies.?>
     
     <meta charset="UTF-8">
+    <base href="<?php echo site_url() ?>">
     <title>Document</title>
-    <link rel="stylesheet" href="http://localhost/realone/css/pfound/index.css">
+    <link rel="stylesheet" href="css/pfound/index.css">
 </head>
-<script type="text/javascript" src="http://localhost/realone/js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery.js"></script>
 <script type="text/javascript">
 function upload(){
    
     $.ajax({
-    url:"http://localhost/realone/index.php/user/c_upload2",
+    url:"index.php/user/c_upload2",
     method:"post",
     data:new FormData($('#file')[0]),
     processData:false,
@@ -63,8 +64,8 @@ function publish(){
  <div class="wp">
   <div id="logo">  
   </div>
-    <p class="left"><a href="http://localhost/realone/index.php/user/c_startp?flag=1" style="color:black">发表寻物</a></p>
-    <p class="right"><a href="http://localhost/realone/index.php/user/c_startp?flag=2" style="color:black">发表招领</a></p>
+    <p class="left"><a href="index.php/user/c_startp?flag=1" style="color:black">发表寻物</a></p>
+    <p class="right"><a href="index.php/user/c_startp?flag=2" style="color:black">发表招领</a></p>
     <span id="land">
     <?php echo $_SESSION['name'] ?> 你好！
     </span>
@@ -144,7 +145,7 @@ function publish(){
     </div>
 </div>
 
-   <script src="http://localhost/realone/css/pfound/index.js">
+   <script src="css/pfound/index.js">
 </script>
 
 </body>

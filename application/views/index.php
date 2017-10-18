@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-   <base href="http://localhost/realone/css/index/"/>
+   <base href="<?php  echo site_url() ?>">
     <meta charset="UTF-8">
     <title>Document</title>
-    <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" type="text/css" href="icon/iconfont.css">
+    <link rel="stylesheet" href="css/index/index.css">
+    <link rel="stylesheet" type="text/css" href="css/index/icon/iconfont.css">
     <script type="text/javascript" src="http://localhost/realone/js/jquery.js"></script>
 </head>
 <body>
@@ -83,7 +83,7 @@ function vvlogin()
 
         $.ajax({
             method:"post",
-            url:"http://localhost/realone/index.php/user/c_checklogin",
+            url:"index.php/user/c_checklogin",
             data:data,
             success:function(result){
                 if(result =="-1"){
@@ -94,7 +94,7 @@ function vvlogin()
                 else {
                   alert("登陆成功");
                      document.getElementById('yourname').innerHTML=result;
-                     window.location.assign('http://localhost/realone/index.php/user/c_starti');
+                     window.location.assign('index.php/user/c_starti');
                    }
             },
             error:function(){
@@ -107,9 +107,9 @@ function jump(m)
 {  
     <?php if(isset($_SESSION['name'])){ ?>
   if(m==1)
-  window.location.assign('http://localhost/realone/index.php/user/c_startlostlist');
+  window.location.assign('index.php/user/c_startlostlist');
 else if(m==2)
-  window.location.assign('http://localhost/realone/index.php/user/c_startfoundlist');
+  window.location.assign('index.php/user/c_startfoundlist');
   <?php }else{ ?>
     alert("请先登录");
     <?php } ?>
@@ -117,13 +117,13 @@ else if(m==2)
 function detail(m,flag)
 
 {
-  window.location.assign('http://localhost/realone/index.php/user/c_detail?id='+res_tmp[flag-1][m].id+'&flag='+flag+"'");
+  window.location.assign('index.php/user/c_detail?id='+res_tmp[flag-1][m].id+'&flag='+flag+"'");
 }
 
 function history()
 {
   <?php if(isset($_SESSION['name'])) {?>
-    window.location.assign('http://localhost/realone/index.php/user/c_starth');
+    window.location.assign('index.php/user/c_starth');
     <?php }else { ?>
       alert("请先登录");
       <?php } ?>
@@ -137,7 +137,7 @@ function logindiv()
 }
 function exit()
 { 
-  window.location.assign('http://localhost/realone/index.php/user/c_exit');  
+  window.location.assign('index.php/user/c_exit');  
 }
 
 </script>
@@ -174,8 +174,8 @@ function exit()
  <div class="wp">
   <div id="logo">  
   </div>
-    <p class="left" style="cursor:pointer;"><a href="http://localhost/realone/index.php/user/c_startp?flag=1" style="color:black;">发表寻物</a></p>
-    <p class="right" style="cursor:pointer;"><a href="http://localhost/realone/index.php/user/c_startp?flag=2" style="color:black;">发表招领</a></p>
+    <p class="left" style="cursor:pointer;"><a href="index.php/user/c_startp?flag=1" style="color:black;">发表寻物</a></p>
+    <p class="right" style="cursor:pointer;"><a href="index.php/user/c_startp?flag=2" style="color:black;">发表招领</a></p>
     <div id="land">
         <i class="iconfont icon-ren" onclick="logindiv()"></i>
         <span id="yourname" style="cursor:pointer;" >XXXXX</span>
@@ -371,7 +371,7 @@ function ball(i,value){
   }
 </script>
 <!-- <script src="index.js"></script>   --> 
-  <script type="text/javascript" src="http://localhost/realone/css/index/index.js">
+  <script type="text/javascript" src="css/index/index.js">
 </script>
 </body>
 </html>
